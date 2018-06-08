@@ -4,7 +4,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -26,5 +28,8 @@
     "url": "https://github.com/Neverblink89/Project-Q2/issues"
   },
   "homepage": "https://github.com/Neverblink89/Project-Q2#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "gh-pages": "^1.2.0"
+  }
 }
